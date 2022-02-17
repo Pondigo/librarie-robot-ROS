@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tipo de documento y carga de paquetes,
+ % NO es necesario modificar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\graphicspath{{Imagenes/}}
+\geometry{ %Definición del tamaño de los márgenes
+a4paper,
+left=10mm,
+right=10mm,
+top=10mm,
+bottom=15mm}
+
+\font\titlefont=cmr12 at 40pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Datos para el título %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{
+	\includegraphics[width=10cm]{udlap.eps}\vspace{2ex} 
+	\\ 
+	\titlefont Minuta \#2\vspace{-3ex}
+	\author{} % No agregar autor, esta linea es para evitar un warning
+}
+\date{
+\huge 10 febrero 2022 \\ \vspace{0.5ex}
+\large Inicio: 21:00 H \quad Término: 21:30 H}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Inicio del documento  %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% Toma de asistencia
+\maketitle %Generar título con los datos previos 
+% ID y nombre de los estudiantes presentes
+\begin{minipage}[t]{0.4\textwidth}
+\section*{Presentes}
+\begin{itemize}
+\item 163044 - Luis Fernando Rosas Ordaz
+\item 164299 - Lenora Pondigo Santamar\'ia 
+\item 164321 - Luis Alberto Saucedo L\'opez 
+\end{itemize}
+\end{minipage}
+% ID y nombre de los estudiantes ausentes
+\begin{minipage}[t]{0.5\textwidth}
+\section*{Ausentes}
+\begin{itemize}
+\item No aplica
+\end{itemize}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%
+% Agenda de la reunión
+%%%%%%%%%%%%%%%%%%%
+\section*{Agenda}
+Los temas discutidos en la reuni\'on fueron los siguientes:
+\begin{enumerate}
+\item Planeación de la metología
+\item Analisís de diseño
+\end{enumerate}
+% Discusión "detallada" de los temas de la reunión.
+\section{Planeación de la metología}
+Se definió los pasos para materializar  el proyecto completo, para posteriormente dividir lo necesario en diferentes sprints. Los pasos generales son:
+\begin{itemize}
+    \item Requisitos de diseño
+    \item Diseño 2D
+    \item Diseño 3D en software
+    \item Programación
+    \item Implementación
+    \end{itemize}
+\section{Analisís de diseño}
+Se encontró que las medidas promedios de un librero son:
+
+\begin{itemize}
+    \item Altura del librero: De 180 cm a 190 cm
+    \item Altura de cada repisa: De 25 cm a 35 cm
+\end{itemize}
+
+Suponiendo que la altura de cada repisa es de 34 cm, tendremos en total de 5 anaqueles.
+
+%%%%%%%%%%%%%%%%%%%
+% Tareas a realizar
+%%%%%%%%%%%%%%%%%%%
+\section*{Tasks}
+Las tareas pendientes para la elaboración del proyecto son:
+\setcounter{section}{0}
+
+\section{Ensayo de dibujo computarizado} %Copiar y pegar más secciones si necesario
+
+Se dibujararán y ensamblaran piezas para la practica, esto con el objetivo de retomar los conocimientos previamente adquiridos en la Certificación de SolidWorks Associate (CSWA).
+
+\begin{itemize}
+    \item Encargado: Luis Rosas, Lenora Pondigo y Luis Saucedo
+\end{itemize}
+
+\section{Creación del repositorio de Git} %Copiar y pegar más secciones si necesario
+
+Se creará un repositorio en la plataforma GitHub, esto con la finalidad de mantener un correcto orden de las versiones del código. De igual forma, para poder tener acceso al código de manera remota.
+\begin{itemize}
+    \item Encargado: Lenora Pondigo
+\end{itemize}
+
+\section*{Future Meetings} %Próxia reunión, al menos una reunión semanal
+La siguiente reuni\'on se va a realizar el d\'ia 17 de febrero del 2022, entre el horario de 16:00 H a 17:40 H
+\end{document}
+% Código modificado de la fuente original, disponible en 
+%{http://github.com/cmichi/latex-template-collection}

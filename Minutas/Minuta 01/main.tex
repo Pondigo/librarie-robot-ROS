@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tipo de documento y carga de paquetes,
+ % NO es necesario modificar
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\graphicspath{{Imagenes/}}
+\geometry{ %Definición del tamaño de los márgenes
+a4paper,
+left=10mm,
+right=10mm,
+top=10mm,
+bottom=15mm}
+
+\font\titlefont=cmr12 at 40pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Datos para el título %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{
+	\includegraphics[width=10cm]{udlap.eps}\vspace{2ex} 
+	\\ 
+	\titlefont Minuta \#1\vspace{-3ex}
+	\author{} % No agregar autor, esta linea es para evitar un warning
+}
+\date{
+\huge 01 febrero 2022 \\ \vspace{0.5ex}
+\large Inicio: 19:30 H \quad Término: 20:00 H}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Inicio del documento  %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% Toma de asistencia
+\maketitle %Generar título con los datos previos 
+% ID y nombre de los estudiantes presentes
+\begin{minipage}[t]{0.4\textwidth}
+\section*{Presentes}
+\begin{itemize}
+\item 163044 - Luis Fernando Rosas Ordaz
+\item 164299 - Lenora Pondigo Santamar\'ia 
+\item 164321 - Luis Alberto Saucedo L\'opez 
+\end{itemize}
+\end{minipage}
+% ID y nombre de los estudiantes ausentes
+\begin{minipage}[t]{0.5\textwidth}
+\section*{Ausentes}
+\begin{itemize}
+\item No aplica
+\end{itemize}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%
+% Agenda de la reunión
+%%%%%%%%%%%%%%%%%%%
+\section*{Agenda}
+Los temas discutidos en la reuni\'on fueron los siguientes:.
+\begin{enumerate}
+\item Metodología a utilizar
+\item Fortalezas y debilidades del equipo
+\item Encargados de las actividades
+\item Selecci\'on de proyecto
+\end{enumerate}
+% Discusión "detallada" de los temas de la reunión.
+\section{Metodología a utilizar}
+La metodología que se empleara sera Scrum, debido a que es una metodología que permite una mayor agilidad en el desarrollo de proyectos.
+De igual forma, para este proyecto esta metolog\'ia es la ideal, ya que optimizara el tiempo en el desarrollo e implementaci\'on del robot ordenador de libros
+\section{Fortalezas y debilidades del equipo}
+Las fortalezas y debilidades de los miembros del equipo son:
+\begin{itemize}
+	\item Lenora Pondigo 
+	\begin{itemize}
+	    \item Fortalezas: Programaci\'on, control de versiones con git y dibujo 3D
+	    \item Debilidades: Organizaci\'on y procrastinaci\'on
+    \end{itemize}
+    \item Luis Fernando Rosas 
+	\begin{itemize}
+	    \item Fortalezas: Dibujo 3D, organizaci\'on y liderazgo
+	    \item Debilidades: Indeciso y poco paciente 
+    \end{itemize}
+    \item Luis Alberto Saucedo 
+	\begin{itemize}
+	    \item Fortalezas: Dedicaci\'on, organizaci\'on y trabajo en equipo
+	    \item Debilidades: Procastinaci\'on y confiado
+    \end{itemize}
+\end{itemize}
+\section{Encargados de las actividades}
+Las cuatro principales actividades del proyecto, estaran supervisadas por un miembro del equipo, de la siguiente forma: 
+\begin{itemize}
+	\item Administraci\'on de proyecto: Luis Alberto Saucedo
+	\item Diseño CAD: Luis Fernando Rosas
+	\item Sistemas de control y programaci\'on: Lenora Pondigo
+	\item Implementaci\'on: Todos
+\end{itemize}
+Es importante señalar que, la actividad de implementaci\'on sera revisado por todos los integrantes, ya que esta actividad requiere las habilidades de todos para una implementaci\'on funcional. 
+\section{Selecci\'on de proyecto}
+El proyecto que se va a desarrollar es el robot ordenador de libros. Este robot fue seleccionado porque se tienen los conocimientos suficientes para desarrollarlo e implementarlo de una forma eficiente.
+%%%%%%%%%%%%%%%%%%%
+% Tareas a realizar
+%%%%%%%%%%%%%%%%%%%
+\section*{Tasks}
+Las tareas pendientes para la elaboración del proyecto son:
+\setcounter{section}{0}
+
+\section{Planeaci\'on de la metolog\'ia} %Copiar y pegar más secciones si necesario
+
+Se realizar\'a la primera planeaci\'on Scrum, esto con la finalidad de optimizar la elaboraci\'on del proyecto
+
+\begin{itemize}
+    \item Encargado: Luis Saucedo
+\end{itemize}
+
+\section{Analis\'is de diseño} %Copiar y pegar más secciones si necesario
+
+Se realizar\'a el primer anal\'is del diseño del robot ordenador de libros. Esto con la finalidad de ir conceptualizando que es lo que se necesita y las especificaciones necesarias a cubrir.
+
+\begin{itemize}
+    \item Encargado: Luis Rosas y Lenora Pondigo
+\end{itemize}
+
+\section*{Future Meetings} %Próxia reunión, al menos una reunión semanal
+La siguiente reuni\'on se va a realizar el d\'ia 10 de febrero del 2022, entre el horario de 16:00 H a 17:40 H
+\end{document}
+% Código modificado de la fuente original, disponible en 
+%{http://github.com/cmichi/latex-template-collection}
